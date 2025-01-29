@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
     "@tailwindcss/postcss": "^4.0.0",
+    "material-icons": "^1.13.13",
     "miniproject": "file:",
     "postcss": "^8.5.1",
     "rxjs": "~7.8.0",

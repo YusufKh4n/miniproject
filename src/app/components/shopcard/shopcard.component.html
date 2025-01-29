@@ -1,11 +1,14 @@
-      <mat-card appearance="outlined" class="rounded-xl hover:scale-105 transition-transform duration-300 w-[80vw]">
-        <div class="grid grid-cols-5 gap-6 p-4 shadow-lg shadow-black/10 rounded-xl items-center bg-white text-center">
-          <mat-card-content>
-            <img src="1.png" class="rounded-xl w-[10vw] h-[10vh] object-cover" alt="Product Image" />
-          </mat-card-content>
-          <mat-card-content class="text-lg font-medium">{{ product.productName }}</mat-card-content>
-          <mat-card-content class="text-gray-600">{{ product.productDescription }}</mat-card-content>
-          <mat-card-content class="text-blue-600 font-bold mt-3">{{ product.productStock }}</mat-card-content>
-          <mat-card-content class="text-green-500 font-semibold">{{ product.productPrice }}</mat-card-content>
-        </div>
-      </mat-card>
+<mat-card appearance="outlined" class="rounded-xl hover:scale-105 transition-transform duration-300 w-[80vw]">
+  <div class="grid grid-cols-6 gap-6 p-4 shadow-lg shadow-black/10 rounded-xl items-center bg-white text-center">
+    <mat-card-content>
+      <img src="1.png" class="rounded-xl w-[10vw] h-[10vh] object-cover" alt="Product Image" />
+    </mat-card-content>
+    <mat-card-content class="font-medium">{{ product.productName }}</mat-card-content>
+    <mat-card-content class="text-gray-600">{{ product.productDescription }}</mat-card-content>
+    <mat-card-content class="text-blue-600 font-bold">{{ product.productStock }}</mat-card-content>
+    <mat-card-content class="text-green-500 font-semibold mt-4">{{ product.productPrice }}</mat-card-content>
+    <button class="">
+     <app-dialogview [product]="product"></app-dialogview> 
+    </button>
+  </div>
+</mat-card>

@@ -1,0 +1,44 @@
+<h2 mat-dialog-title class="text-2xl font-extrabold text-center text-indigo-600">
+  🌟 Product Overview
+</h2>
+
+<div class="flex flex-row justify-between items-center p-6 gap-8">
+  <!-- Product Image -->
+  <div class="flex justify-center items-center w-full ">
+    <img 
+      src="1.png" 
+      alt="Product Image" 
+      class="w-56 h-56 rounded-lg shadow-2xl border border-gray-200 object-cover" 
+    />
+  </div>
+
+  <!-- Product Details -->
+  <mat-dialog-content class="flex flex-col gap-6 w-full">
+    <div class="grid gap-4">
+      <p class="text-lg font-semibold text-gray-700">
+        <span class="text-indigo-500 tracking-widest">Product Name:</span> {{ data.productName }}
+      </p>
+      <p class="text-lg font-semibold text-gray-700">
+        <span class="text-indigo-500 tracking-widest ">Description:</span> {{ data.productDescription }}
+      </p>
+      <p class="text-lg font-semibold text-gray-700">
+        <span class="text-indigo-500 tracking-widest">Price:</span> {{ data.productPrice | currency }}
+      </p>
+      <p class="text-lg font-semibold text-gray-700">
+        <span class="text-indigo-500 tracking-widest">In Stock:</span> {{ data.productStock }}
+      </p>
+    </div>
+  </mat-dialog-content>
+</div>
+
+<!-- Dialog Actions -->
+<div mat-dialog-actions align="center" class="flex justify-center p-4">
+  <button 
+    mat-raised-button 
+    color="accent" 
+    class="px-6 py-2 text-lg font-bold rounded-lg shadow-md hover:bg-indigo-600 hover:text-white"
+    mat-dialog-close
+  >
+    Close
+  </button>
+</div>
